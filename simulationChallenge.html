@@ -109,7 +109,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This Quarto document contains my full simulation challenge analysis in Python.</p>
 <section id="question-1-expected-value" class="level1">
 <h1>Question 1: Expected Value</h1>
-<div id="52cc9fa6" class="cell" data-execution_count="1">
+<div id="6fb059a8" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initial balance</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>initial_balance <span class="op">=</span> <span class="dv">1000</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -143,7 +143,7 @@ Expected return percentage: 5.00%</code></pre>
 </section>
 <section id="question-3-single-simulation" class="level1">
 <h1>Question 3: Single Simulation</h1>
-<div id="9b873d62" class="cell" data-execution_count="2">
+<div id="98094e35" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -198,7 +198,7 @@ Expected return percentage: 5.00%</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="simulationChallenge_files/figure-html/cell-3-output-1.png" width="950" height="566" class="figure-img"></p>
+<p><img src="simulationChallenge_files/figure-html/cell-3-output-1.png" width="949" height="564" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -213,7 +213,7 @@ Total return percentage: -43.71%</code></pre>
 </section>
 <section id="question-4-multiple-simulations" class="level1">
 <h1>Question 4: Multiple Simulations</h1>
-<div id="4279186b" class="cell" data-execution_count="3">
+<div id="01d5ed49" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -281,7 +281,7 @@ Total return percentage: -43.71%</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="simulationChallenge_files/figure-html/cell-4-output-1.png" width="946" height="566" class="figure-img"></p>
+<p><img src="simulationChallenge_files/figure-html/cell-4-output-1.png" width="946" height="564" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -299,7 +299,7 @@ Standard deviation: $15086.30</code></pre>
 </section>
 <section id="question-5-probability-above-1000" class="level1">
 <h1>Question 5: Probability Above $1000</h1>
-<div id="25c94716" class="cell" data-execution_count="4">
+<div id="ad9a1f9e" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate probability of ending above $1000 from the 100 simulations</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>prob_above_1000 <span class="op">=</span> np.mean(final_balances <span class="op">&gt;</span> <span class="dv">1000</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -314,7 +314,7 @@ This means only 24 out of 100 simulations ended above the initial balance.</code
 </section>
 <section id="question-6-strategy-comparison" class="level1">
 <h1>Question 6: Strategy Comparison</h1>
-<div id="a288a049" class="cell" data-execution_count="5">
+<div id="901b5637" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -392,7 +392,7 @@ This means only 24 out of 100 simulations ended above the initial balance.</code
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="simulationChallenge_files/figure-html/cell-6-output-1.png" width="1142" height="566" class="figure-img"></p>
+<p><img src="simulationChallenge_files/figure-html/cell-6-output-1.png" width="1141" height="564" class="figure-img"></p>
 </figure>
 </div>
 </div>
