@@ -113,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="question-1-expected-value" class="level1">
 <h1>Question 1: Expected Value</h1>
-<div id="d4424f92" class="cell" data-execution_count="1">
+<div id="b0b4ebbf" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Expected value calculation</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>initial <span class="op">=</span> <span class="dv">1000</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>ev <span class="op">=</span> <span class="fl">0.5</span> <span class="op">*</span> (initial <span class="op">*</span> <span class="fl">1.5</span>) <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> (initial <span class="op">*</span> <span class="fl">0.6</span>)</span>
@@ -137,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="question-3-single-simulation" class="level1">
 <h1>Question 3: Single Simulation</h1>
-<div id="6009066d" class="cell" data-execution_count="2">
+<div id="a85cc2b6" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -173,7 +173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="question-4-multiple-simulations-100-runs" class="level1">
 <h1>Question 4: Multiple Simulations (100 runs)</h1>
-<div id="a315cee3" class="cell" data-execution_count="3">
+<div id="2f40114b" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">123</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>n_sims <span class="op">=</span> <span class="dv">100</span></span>
@@ -225,7 +225,7 @@ dtype: float64</code></pre>
 </section>
 <section id="question-5-probability-above-1000" class="level1">
 <h1>Question 5: Probability Above $1000</h1>
-<div id="1b0683a2" class="cell" data-execution_count="4">
+<div id="7bc540b5" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>prob_above_1000 <span class="op">=</span> np.mean(np.array(final_balances) <span class="op">&gt;</span> <span class="dv">1000</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>prob_above_1000</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -237,7 +237,7 @@ dtype: float64</code></pre>
 </section>
 <section id="question-6-modified-strategy-50-bets" class="level1">
 <h1>Question 6: Modified Strategy (50% bets)</h1>
-<div id="b346b2f8" class="cell" data-execution_count="5">
+<div id="3075d746" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> modified_strategy(years<span class="op">=</span><span class="dv">37</span>, initial<span class="op">=</span><span class="dv">1000</span>):</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> initial</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(years):</span>
